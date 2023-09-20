@@ -1,0 +1,168 @@
+<?php
+$a=15;
+$b=9;
+var_dump($a > $b);
+echo "<br>";
+
+if($a < $b){
+    var_dump("Hello Bangladesh") ;
+}else{
+    echo "Bye";
+echo "<br>";
+}
+
+echo "<br>";
+$a=15;
+if($a == 14){
+    echo ("Hello Bangladesh") ;
+}else{
+    echo "Abber Dho";
+echo "<br>";
+}
+
+echo "<br>";
+$a=15;
+if($a === '15'){
+    echo ("Hello Bangladesh") ;
+}else{
+    echo "Try again  later";
+}
+
+echo "<br>";
+$a=15;
+if($a != '15'){
+    echo ("Hello Bangladesh") ;
+}else{
+    echo "Try again ";
+}
+
+echo "<br>";
+$age =18;
+if($age >= 18){
+    echo 'Suitable';
+}else{
+    echo'Unsuitable';
+}
+echo "<br>";
+$phone ='0453285287';
+if(is_numeric($phone)){
+    echo'valid Number';
+}else{
+    echo 'Invalid Number';
+}
+echo "<br>";
+
+$text ='gufudtf';
+if(ctype_alpha($text)){
+    echo'valid ';
+}else{
+    echo 'Invalid ';
+}  
+echo "<br>";
+
+$text ='57.858';
+if(is_bool($text)){
+    echo'valid ';
+}else{
+    echo 'Invalid ';
+}  
+echo "<br>";
+
+// function checktext($name){
+// }
+// if(ctype_alpha($name)){
+//        echo'valid text';
+//     } else {
+//     echo 'Invalid text ';
+// echo "<br>";
+// }
+// checktext('uuiooy');
+// echo "<br>";
+
+$a=60;
+$b=60;
+$c=70;
+$d=60;
+if($a>$b and $a>$c and $a>$d){
+    echo "A is greater then B & C & D";
+}elseif($b>$a and $b>$c and $b>$d){
+    echo "B is greater then A & C & D";
+}elseif($c>$a and $c>$b and $c>$d ){
+    echo "C is greater then A & B & D";
+}else{
+    echo "D is greater then A & B & C";
+}echo "<br>";
+
+
+echo "<br>";
+$num=0;
+if($num>0){
+    echo'Positive Num';
+}elseif($num<0){
+    echo'Negative Num';
+}else{
+    echo 'Neutral Num';
+echo "<br>";
+}
+
+echo "<br>";
+$num="768";
+if($num% 2==0){
+    echo"$num is Even Num";
+}elseif($num % 2==1){
+    echo"$num is Odd Num";
+}else{
+    echo 'Invalid';
+echo "<br>";
+}
+echo "<br>";
+
+function authcheck($useremail,$userpass)
+{
+//Database Start
+$dbemail='armanbd@gmail.com';
+$dbpass='12345';
+//Database End
+    if($useremail == $dbemail) {
+        if($userpass == $dbpass){
+        echo 'Welcome to your dashboard';
+        }else{
+        echo 'Wrong Password';
+        }
+    }else{
+    echo 'Enter Correct Email';
+     }
+    }echo "<br>";
+authcheck('armanbd@gmail.com',12335);
+
+echo "<br>";
+$marks =32;
+echo "<br>";
+if($marks >= 80 and $marks <=100){
+    echo'A+';
+}elseif($marks >= 70 and $marks <80){
+    echo'A-';
+}elseif($marks >= 60 and $marks <70){
+    echo 'A';
+}elseif($marks >= 50 and $marks <60){
+    echo 'B';
+}elseif($marks >= 40 and $marks <50){
+    echo 'C';
+}elseif($marks >= 33 and $marks <40){
+    echo 'D';
+}elseif($marks >= 0 and $marks <33){
+    echo 'F';
+}else{
+    echo'Invalid Marks';
+}
+echo "<br>";
+$id =123456789;
+echo "<br>";
+echo is_numeric($id) ? 'True':'False';
+
+echo "<br>";
+function sum ($num1, $num2){
+    return $num1 + $num2;
+}echo "<br>";
+echo 6+9;
+
